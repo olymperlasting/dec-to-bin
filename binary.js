@@ -8,6 +8,9 @@ function binary() {
     y = Math.trunc (y / 2);
   }
 
-  document.getElementById("result").innerHTML = "Decimal number: " + x + "<br>Binary number: ";
-  while (arr.length != 0) document.getElementById("result").innerHTML += arr.pop();
+  if (arr.length == 0) document.getElementById("result").innerHTML = "Decimal number: " + x + "<br>Binary number: 0";
+  else {
+    document.getElementById("result").innerHTML = "Decimal number: " + x + "<br>Binary number: ";
+    while (arr.length != 0) document.getElementById("result").innerHTML += arr.pop();
+  }
 }
